@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from '../../../shared-ui';
 
 @Component({
   selector: 'app-add-user',
@@ -9,4 +10,11 @@ import { Component } from '@angular/core';
 })
 export class AddUserComponent {
 
+
+ readonly user: User = {
+    id: 1,
+    name: 'John Doe',
+    email: 'John@example.com',
+    phone: 1234567890
+  };
 }
